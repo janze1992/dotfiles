@@ -131,7 +131,7 @@ set $ws10 "10"
 # assign workspaces & autostart
 #workspace "10" output DisplayPort-2
 exec terminator 
-assign [class="Chromium"] workspace "2: "
+assign [class="firefox"] workspace "2: "
 exec --no-startup-id /usr/bin/chromium
 #assign [class="vdiclient.py"] workspace "4: "
 #exec --no-startup-id /usr/locale/bin/vdiclient.py
@@ -377,4 +377,4 @@ exec --no-startup-id xautolock -time 7 -locker "systemctl suspend" &
 bindsym --release $mod+z exec scrot -s 
 
 # bar toggle, hide or show 
-bindsym $mod+m bar mode toggle
+bindsym $mod+m bar mode toggle dmenu
