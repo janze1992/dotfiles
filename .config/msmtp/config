@@ -1,0 +1,11 @@
+account jan@zeuke.me
+host smtp.mail.me.com
+port 465
+from jan@zeuke.me
+user jzeuke
+passwordeval "pass jan@zeuke.me"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/jan/.local/state/msmtp/msmtp.log
+tls_starttls off

@@ -1,0 +1,15 @@
+[calendars]
+
+[[Jan]]
+path = /home/jan/.local/share/khal/calendars/4358A5BD-FF24-4BE2-8D7E-C525B6B09F04
+type = calendar
+
+[locale]
+timeformat = %H:%M
+dateformat = %d/%m/%Y
+longdateformat = %d/%m/%Y
+datetimeformat = %d/%m/%Y %H:%M
+longdatetimeformat = %d/%m/%Y %H:%M
+
+[default]
+default_calendar = Jan

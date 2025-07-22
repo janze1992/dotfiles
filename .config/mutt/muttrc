@@ -1,0 +1,8 @@
+# vim: filetype=neomuttrc
+source /usr/local/share/mutt-wizard/mutt-wizard.muttrc
+set header_cache_backend = "lmdb"
+source /home/jan/.config/mutt/accounts/jan@zeuke.me.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/jan/.config/mutt/accounts/jan@zeuke.me.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to jan@zeuke.me"
+
+
+set editor="mutt-trim %s; vim +':set textwidth=72' +':set wrapmargin=0' +':set wrap' +':set spell' %s"
