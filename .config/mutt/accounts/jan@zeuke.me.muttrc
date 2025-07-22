@@ -12,8 +12,8 @@ set hostname = "zeuke.me"
 source /usr/local/share/mutt-wizard/switch.muttrc
 set spool_file = "+INBOX"
 set postponed = "+Drafts"
-set trash = "+Trash"
-set record = "+Sent"
+set trash = "+Deleted Messages"
+set record = "+Sent Messages"
 
 macro index o "<shell-escape>mailsync jan@zeuke.me<enter>" "sync jan@zeuke.me"
-mailboxes "=INBOX" "=Drafts" "=Junk" "=Trash" "=Sent" "=Archive"
+mailboxes "=INBOX" "=Drafts" "=Junk" "=Deleted Messages" "=Sent Messages" "=Archive"
