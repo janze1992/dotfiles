@@ -132,7 +132,7 @@ set $ws10 "10"
 #workspace "10" output DisplayPort-2
 exec terminator 
 assign [class="firefox"] workspace "2: "
-exec --no-startup-id /usr/bin/chromium
+exec --no-startup-id /usr/bin/firefox
 #assign [class="vdiclient.py"] workspace "4: "
 #exec --no-startup-id /usr/locale/bin/vdiclient.py
 assign [class="Pcmanfm"] workspace "5: "
