@@ -16,7 +16,7 @@ source /home/jan/.config/mutt/accounts/jan@zeuke.me.muttrc
 #### General Settings
 
 set smtp_authenticators = 'gssapi:login'
-unset help
+set help
 set sleep_time = 0		        # Pause 0 seconds for informational messages
 set pager_read_delay = 3      # View a message for 3 seconds to mark as read
 set mark_old = no		          # Unread mail stay unread until read
@@ -105,7 +105,7 @@ set beep=no  # don't beep for errors
 set beep_new # beep for new messages
 
 #### Text editor
-set editor="mutt-trim %s vim +':set textwidth=72' +':set wrapmargin=0' +':set wrap' +':set spell' %s"
+set editor="vim +':set textwidth=72' +':set wrapmargin=0' +':set wrap' +':set spell' %s"
 
 #### Markdown to html email conversion
 macro compose M "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=UTF-8\n" "Convert from MD to HTML"

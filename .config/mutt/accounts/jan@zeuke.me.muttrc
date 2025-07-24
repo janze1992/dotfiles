@@ -9,7 +9,7 @@ set header_cache = "/home/jan/.cache/mutt-wizard/jan_zeuke.me/headers"
 set message_cachedir = "/home/jan/.cache/mutt-wizard/jan_zeuke.me/bodies"
 set mbox_type = Maildir
 set hostname = "zeuke.me"
-#source /usr/local/share/mutt-wizard/switch.muttrc
+source $HOME/.config/mutt/switch.muttrc
 set spool_file = "+INBOX"
 set postponed = "+Drafts"
 set trash = "+Deleted Messages"
