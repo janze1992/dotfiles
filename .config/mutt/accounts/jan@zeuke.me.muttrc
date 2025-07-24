@@ -9,11 +9,28 @@ set header_cache = "/home/jan/.cache/mutt-wizard/jan_zeuke.me/headers"
 set message_cachedir = "/home/jan/.cache/mutt-wizard/jan_zeuke.me/bodies"
 set mbox_type = Maildir
 set hostname = "zeuke.me"
-source /usr/local/share/mutt-wizard/switch.muttrc
+#source /usr/local/share/mutt-wizard/switch.muttrc
 set spool_file = "+INBOX"
 set postponed = "+Drafts"
 set trash = "+Deleted Messages"
 set record = "+Sent Messages"
-
+#set spam ="+Junk"
 macro index o "<shell-escape>mailsync jan@zeuke.me<enter>" "sync jan@zeuke.me"
-mailboxes "=INBOX" "=Drafts" "=Junk" "=Deleted Messages" "=Sent Messages" "=Archive"
+mailboxes "=INBOX" "=Drafts" "=Junk" "=Deleted Messages" "=Sent Messages" "=Archive" "=01_Follow Up"
+
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter><enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+macro index,pager gs "<change-folder>=Sent Messages<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=Sent Messages<enter><enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=Sent Messages<enter>" "copy mail to sent"
+macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
+macro index,pager Md ";<save-message>=Drafts<enter><enter>" "move mail to drafts"
+macro index,pager Cd ";<copy-message>=Drafts<enter>" "copy mail to drafts"
+macro index,pager gS "<change-folder>=Junk<enter>" "go to spam"
+macro index,pager MS ";<save-message>=Junk<enter><enter>" "move mail to spam"
+macro index,pager CS ";<copy-message>=Junk<enter>" "copy mail to spam"
+macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
+macro index,pager Ma ";<save-message>=Archive<enter><enter>" "move mail to archive"
+macro index,pager Ca ";<copy-message>=Archive<enter>" "copy mail to archive"
+

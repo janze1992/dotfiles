@@ -97,7 +97,7 @@ bind index,pager N search-opposite
 bind index,pager p search-opposite
 bind index,pager,attach,editor,compose <F5> refresh
 macro index,pager \cl '<pipe-message>urlscan -d -w 80<enter>' "call urlscan to open links"
-macro index O "<shell-escape>mbsync -a -c $HOME/.config/isync/mbsyncrc<enter>" "run mbsync to sync all mail"
+macro index O "<shell-escape>mbsync -a" "run mbsync to sync all mail"
 macro attach s '<save-entry><kill-line>~/Downloads/<enter>a' "Save file to ~/Downloads"
 macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
 macro index \Ca "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
