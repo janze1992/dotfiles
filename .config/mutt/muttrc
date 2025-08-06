@@ -84,8 +84,9 @@ set mail_check_stats
 set sidebar_format = '%D%?F? [%F]?%* %?N?%N/? %?S?%S?'
 
 #### Thread ordering
-#set use_threads=reverse
-set sort='reverse-date'
+set use_threads=reverse
+set sort=date
+set sort_aux=date
 set collapse_all = yes
 set uncollapse_new = no
 set thread_received = yes
@@ -117,3 +118,9 @@ set wait_key=no
 
 # this is a bit of a hack which you may not want/need
 #timeout-hook 'exec sync-mailbox' # sync mailbox whenever idle
+#
+
+#Save-Hook zum manipulieren des Timestamp im Maildir Format, E-Mails werden auch in Apple mail etc richtig angezeig.
+#
+#save-hook . "<shell-escape>touch -d \"$(formail -c -x < %f)\" %f<enter>
+
