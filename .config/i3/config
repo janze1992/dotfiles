@@ -337,16 +337,6 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	i3bar_command i3bar -t
-
-#colors {
-#	background #00000080
-#	focused_workspace  #00000080 #02adee80 #ffffff
-#       active_workspace   #00000080 #5f676a80 #ffffff
-#      inactive_workspace #00000080 #00000080 #888888
-#        urgent_workspace   #2f343a #900000 #ffffff
-#        binding_mode       #2f343a #900000 #ffffff
-#}
-#	output DisplayPort-1
 	font pango:FontAwesome, Fira mono 8
 	position top
 	tray_output none
