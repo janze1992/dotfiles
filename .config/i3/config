@@ -355,6 +355,9 @@ exec setxkbmap de &
 # Nitrogen
 #exec nitrogen --restore &
 
+#reset colorscheme
+exec_always wal -R
+
 # Picom
 exec picom -CGb & 
 
