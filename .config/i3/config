@@ -51,7 +51,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -363,7 +363,7 @@ exec setxkbmap de &
 #exec /home/jan/.screenlayout/displays.sh
 
 # Nitrogen
-exec nitrogen --restore &
+#exec nitrogen --restore &
 
 # Picom
 exec picom -CGb & 

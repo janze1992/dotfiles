@@ -1,3 +1,5 @@
 [user]
-	name = jan
+	name = Jan Zeuke
 	email = jan@zeuke.me
+[core]
+	excludesFile = /home/jan/.config/git/ignore
