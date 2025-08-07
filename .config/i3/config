@@ -63,6 +63,7 @@ bindcode $mod+40 exec "rofi -modi drun,run,ssh,combi -show drun -theme solarized
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec fish -c "rofi -show drun"
 
 # change focus
 bindsym $mod+j focus left
