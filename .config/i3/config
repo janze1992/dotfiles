@@ -131,7 +131,7 @@ set $ws10 "10"
 
 # assign workspaces & autostart
 #workspace "10" output DisplayPort-2
-exec terminator 
+exec alacritty 
 assign [class="firefox"] workspace "2: "
 exec --no-startup-id /usr/bin/firefox
 #assign [class="vdiclient.py"] workspace "4: "
